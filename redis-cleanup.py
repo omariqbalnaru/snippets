@@ -16,7 +16,7 @@ def processInput(index, key, r):
         print('deleting: ', key)
         r.delete(key)
 
-# setting number of cores according to cpu_count. you might need to experiment with it
+# setting number of threads according to cpu_count. you might need to experiment with it
 num_cores = multiprocessing.cpu_count() * 16
 print('num_cores: ', num_cores);
 
